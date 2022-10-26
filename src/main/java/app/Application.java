@@ -2,6 +2,8 @@ package app;
 
 import app.config.AppConfig;
 import app.model.AnimalsCage;
+import app.model.Dog;
+import app.model.Timer;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
 
@@ -14,6 +16,7 @@ public class Application {
             AnimalsCage bean =
                     applicationContext.getBean(AnimalsCage.class);
             bean.whatAnimalSay();
+            bean.getTimer().getTime();
         }
     }
 
